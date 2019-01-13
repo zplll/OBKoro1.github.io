@@ -71,21 +71,22 @@
 
 
 
-<meta name="description" content="背景：有一个任务非常耗时会消耗后台大量算力，所以在退出页面的时候，要求前端这边发送一个请求来杀死任务。 一开始以为这个需求非常简单，就是在进入其他路由前，发送一下请求，杀死  一下任务就好了。 然而现实狠狠的打了我的脸，因为退出页面的场景不止切换路由~ 退出页面场景： 还在本网站，跳到其他路由 刷新页面/关闭页面  还在本网站，跳到其他路由这个比较简单，在Vue中可以通过路由离开的钩子befor">
+<meta name="description" content="背景：有一个任务非常耗时会消耗后台大量算力，所以在退出页面的时候，要求前端这边发送一个请求来杀死任务。 一开始以为这个需求非常简单，就是在进入其他路由前，发送一下请求，杀死  一下任务就好了。 然而现实狠狠的打了我的脸，因为退出页面的场景不止切换路由~">
 <meta name="keywords" content="js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="刷新&#x2F;关闭页面之前发送请求">
 <meta property="og:url" content="http://yoursite.com/2019/01/13/刷新-关闭页面之前发送请求/index.html">
 <meta property="og:site_name" content="OBKoro1&#39;s Blog">
-<meta property="og:description" content="背景：有一个任务非常耗时会消耗后台大量算力，所以在退出页面的时候，要求前端这边发送一个请求来杀死任务。 一开始以为这个需求非常简单，就是在进入其他路由前，发送一下请求，杀死  一下任务就好了。 然而现实狠狠的打了我的脸，因为退出页面的场景不止切换路由~ 退出页面场景： 还在本网站，跳到其他路由 刷新页面/关闭页面  还在本网站，跳到其他路由这个比较简单，在Vue中可以通过路由离开的钩子befor">
+<meta property="og:description" content="背景：有一个任务非常耗时会消耗后台大量算力，所以在退出页面的时候，要求前端这边发送一个请求来杀死任务。 一开始以为这个需求非常简单，就是在进入其他路由前，发送一下请求，杀死  一下任务就好了。 然而现实狠狠的打了我的脸，因为退出页面的场景不止切换路由~">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/1/13/16846cf38b1ca27e?imageView2/2/w/480/h/480/q/85/interlace/1">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/005Y4rCogy1fyr8kpadj0j30bt04vglt.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/005Y4rCogy1fz5098m4tsj31gd06n761.jpg">
-<meta property="og:updated_time" content="2019-01-13T10:41:30.559Z">
+<meta property="og:updated_time" content="2019-01-13T11:08:54.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="刷新&#x2F;关闭页面之前发送请求">
-<meta name="twitter:description" content="背景：有一个任务非常耗时会消耗后台大量算力，所以在退出页面的时候，要求前端这边发送一个请求来杀死任务。 一开始以为这个需求非常简单，就是在进入其他路由前，发送一下请求，杀死  一下任务就好了。 然而现实狠狠的打了我的脸，因为退出页面的场景不止切换路由~ 退出页面场景： 还在本网站，跳到其他路由 刷新页面/关闭页面  还在本网站，跳到其他路由这个比较简单，在Vue中可以通过路由离开的钩子befor">
-<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/005Y4rCogy1fyr8kpadj0j30bt04vglt.jpg">
+<meta name="twitter:description" content="背景：有一个任务非常耗时会消耗后台大量算力，所以在退出页面的时候，要求前端这边发送一个请求来杀死任务。 一开始以为这个需求非常简单，就是在进入其他路由前，发送一下请求，杀死  一下任务就好了。 然而现实狠狠的打了我的脸，因为退出页面的场景不止切换路由~">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2019/1/13/16846cf38b1ca27e?imageView2/2/w/480/h/480/q/85/interlace/1">
 
 
 
@@ -453,9 +454,11 @@
       
 
       
-        <h3 id="背景："><a href="#背景：" class="headerlink" title="背景："></a>背景：</h3><p>有一个任务非常耗时会消耗后台大量算力，所以在退出页面的时候，要求前端这边发送一个请求来杀死任务。</p>
+        <p><img src="https://user-gold-cdn.xitu.io/2019/1/13/16846cf38b1ca27e?imageView2/2/w/480/h/480/q/85/interlace/1" alt=""></p>
+<h3 id="背景："><a href="#背景：" class="headerlink" title="背景："></a>背景：</h3><p>有一个任务非常耗时会消耗后台大量算力，所以在退出页面的时候，要求前端这边发送一个请求来杀死任务。</p>
 <p>一开始以为这个需求非常简单，就是在进入其他路由前，发送一下请求，杀死  一下任务就好了。</p>
 <p>然而现实狠狠的打了我的脸，因为退出页面的场景不止切换路由~</p>
+<a id="more"></a>
 <h3 id="退出页面场景："><a href="#退出页面场景：" class="headerlink" title="退出页面场景："></a>退出页面场景：</h3><ol>
 <li>还在本网站，跳到其他路由</li>
 <li>刷新页面/关闭页面</li>
